@@ -1,0 +1,12 @@
+{
+  "users": [
+    {
+      "name": "tejas",
+      "work": "development"
+    },
+    {
+      "name": "tespie",
+      "work": "fun"
+    }
+  ]
+}

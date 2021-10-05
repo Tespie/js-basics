@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Events and Listeners</title>
+  </head>
+  <body>
+    <h1 id="h1">Just Click Anywhere on the Page...</h1>
+    <script>
+      document.addEventListener("click", changeColor, false);
+
+      function changeColor(e) {
+        document.body.style.backgroundColor = "yellow";
+        // e.stopPropagation();
+        var h1 = document.getElementById("h1");
+        h1.innerHTML = "Whohaa.........Event Trigged...";
+      }
+    </script>
+
+
+<button id="b1" onclick="click1()">Button 1</button>
+    <p id="p1">Paragraph 1</p>
+    <br>
+
+    <button id="b2">Button 2</button>
+    <input placeholder="i am input1" type="text" id="i1">
+    <p id="p2">Paragraph 2</p>
+    <br>
+    <button id="b3">Button 3</button>
+    <p id="p3">Paragraph 3</p>
+    <br>
+    <input  type="text" id="i2">
+    <p id="p4">Paragraph 4</p>
+    <br>
+
+    <script src="./events.js"></script>
+
+
+    <!-- <script src="./events.js"></script> -->
+  </body>
+
+
+
+</html>

@@ -1,0 +1,45 @@
+<html>
+  <head>
+    this is header
+  </head>
+  <!-- <body onload="myFunction();"> -->
+  <body>
+    <h1 id="heading">This is h1 tag</h1>
+    <button onclick="changeStyle()">Change</button>
+    <p id="para1">Some text in p tag</p>
+    <p id="para2">Some text in p tag</p>
+    <p id="para3">Some text in p tag</p>
+    <p id="para4">Some text in p tag</p>
+    <p id="para5">Some text in p tag</p>
+
+    <button onclick="changeCombineStyle()">
+      Hit here to change all 5 p tags style
+    </button>
+
+    <div id="text">
+      <p>This is a text</p>
+
+      <p id="p1">This is a text which will be deleted</p>
+
+      <button onclick="delete_2nd_textLine()">Delete 2nd line</button>
+    </div>
+
+    <button onclick="alert('im alert on click')" value="Alert button value">
+      Alert button
+    </button>
+
+    <input type="button" value="input Button" onclick="doSomething()" />
+  </body>
+  <!-- <script src="dom.js"> -->
+  <script>
+    // This fuction is will not called as we specified SRC and script also inside both tag
+    // At a time only one thing can execute and i.e.
+    function doSomething() {
+      alert("I'm alert on input button");
+    }
+
+    function myFunction() {
+      document.write("dfef");
+    }
+  </script>
+</html>
